@@ -1,8 +1,27 @@
+/* =========================================================
+   App.css
+   Portfolio Custom Styles
+   ---------------------------------------------------------
+   Purpose:
+   - Clean responsive About section
+   - Clean responsive Project detail sections
+   - Fix tablet widths such as 884, 834, 820, and 800px
+   - Avoid image/text overlap on medium screens
+   ========================================================= */
+
+/* =========================================================
+   VERY SMALL SCREEN SAFETY FIX
+   ---------------------------------------------------------
+   This keeps older template sections from becoming too narrow
+   on very small phones.
+   ========================================================= */
+
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;
     width: 111%;
   }
+
   #about,
   #services,
   #testimonials,
@@ -14,5 +33,414 @@
 
   #portfolio {
     width: 110%;
+  }
+}
+
+/* =========================================================
+   ABOUT SECTION
+   ---------------------------------------------------------
+   Desktop:
+   [ image ] [ about text + why choose me ]
+
+   Tablet / iPad / narrow laptop:
+   [ image ]
+   [ about text + why choose me ]
+
+   Phone:
+   [ image ]
+   [ about text ]
+   [ why choose me list stacked ]
+   ========================================================= */
+
+#about {
+  padding: 90px 0 80px;
+  background: #ffffff;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  scroll-margin-top: 90px;
+}
+
+/* Main white content wrapper */
+.about-section-box {
+  max-width: 1100px;
+  padding: 40px 45px;
+  background: #ffffff;
+}
+
+/* Large desktop layout only */
+.about-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 45px;
+}
+
+/* Left image column */
+.about-image-column {
+  flex: 0 0 42%;
+}
+
+/* Right content column */
+.about-content-column {
+  flex: 1;
+}
+
+/* About image */
+.about-profile-img {
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  display: block;
+  border: none;
+  box-shadow: none;
+}
+
+/* About text wrapper */
+.custom-about-text {
+  width: 100%;
+}
+
+/* About title */
+.custom-about-text h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+/* Blue underline below section title */
+.custom-about-text h2::after {
+  position: absolute;
+  content: '';
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 70px;
+  bottom: 0;
+  left: 0;
+}
+
+/* About paragraph */
+.custom-about-text p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #777777;
+  margin-bottom: 28px;
+  max-width: 620px;
+}
+
+/* Why Choose Me heading */
+.custom-about-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #333333;
+}
+
+/* Why Choose Me two-column list */
+.about-list-style {
+  display: flex;
+  gap: 45px;
+  align-items: flex-start;
+}
+
+/* List reset */
+.about-list-style ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  flex: 1;
+}
+
+/* List items */
+.about-list-style ul li {
+  margin-bottom: 10px;
+  color: #777777;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* Blue check mark */
+.about-list-style ul li::before {
+  content: '✓';
+  color: #5ca9fb;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+/* =========================================================
+   ABOUT SECTION: TABLET / IPAD / MEDIUM SCREENS
+   ---------------------------------------------------------
+   Important:
+   This breakpoint fixes the tested screen widths:
+   - 884 x 1104
+   - 834 x 1194
+   - 820 x 1180
+   - 800 x 1280
+
+   At 1199px and below, the About section stops using
+   side-by-side layout and stacks cleanly.
+   ========================================================= */
+
+@media (max-width: 1199px) {
+  #about {
+    padding: 80px 0 70px;
+  }
+
+  .about-section-box {
+    max-width: 760px;
+    padding: 35px;
+  }
+
+  .about-row {
+    display: block;
+  }
+
+  .about-image-column,
+  .about-content-column {
+    width: 100%;
+  }
+
+  .about-profile-img {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 35px auto;
+  }
+
+  .custom-about-text {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .custom-about-text p {
+    max-width: 100%;
+  }
+
+  .about-list-style {
+    display: flex;
+    gap: 45px;
+  }
+}
+
+/* =========================================================
+   ABOUT SECTION: SMALL TABLETS / LARGE PHONES
+   ========================================================= */
+
+@media (max-width: 768px) {
+  #about {
+    padding: 70px 0 60px;
+  }
+
+  .about-section-box {
+    max-width: 100%;
+    padding: 30px 25px;
+  }
+
+  .about-profile-img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .custom-about-text h2 {
+    font-size: 30px;
+  }
+
+  .custom-about-text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .custom-about-text h3 {
+    font-size: 22px;
+  }
+
+  .about-list-style {
+    gap: 25px;
+  }
+
+  .about-list-style ul li {
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   ABOUT SECTION: PHONES
+   ---------------------------------------------------------
+   The two Why Choose Me columns become one stacked list.
+   ========================================================= */
+
+@media (max-width: 576px) {
+  .about-section-box {
+    padding: 25px 20px;
+  }
+
+  .about-list-style {
+    display: block;
+  }
+
+  .about-list-style ul {
+    margin-bottom: 0;
+  }
+
+  .custom-about-text h2 {
+    font-size: 28px;
+  }
+}
+
+/* =========================================================
+   PROJECT DETAIL SECTIONS
+   ---------------------------------------------------------
+   These styles make Project01, Project02, and Project03
+   look like the reference screenshot:
+   - gray section background
+   - large image at the top
+   - title below image
+   - paragraph
+   - features in two columns
+   ========================================================= */
+
+.project-section {
+  padding: 100px 0;
+  background: #e6e6e6;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  scroll-margin-top: 90px;
+}
+
+.project-container {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+/* Project image */
+.project-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+}
+
+/* Project text wrapper */
+.project-text {
+  max-width: 850px;
+}
+
+/* Project title */
+.project-text h2 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  font-size: 42px;
+  font-weight: 800;
+  color: #333333;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+/* Blue underline below project title */
+.project-text h2::after {
+  position: absolute;
+  content: '';
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 75px;
+  bottom: 0;
+  left: 0;
+}
+
+/* Project paragraph */
+.project-text p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #777777;
+  margin-bottom: 35px;
+  max-width: 850px;
+}
+
+/* Features heading */
+.project-text h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+/* Features list layout */
+.project-list-style {
+  display: flex;
+  gap: 170px;
+  flex-wrap: nowrap;
+}
+
+/* List reset */
+.project-list-style ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Feature list items */
+.project-list-style ul li {
+  margin-bottom: 12px;
+  color: #777777;
+  font-size: 16px;
+}
+
+/* Blue check mark */
+.project-list-style ul li::before {
+  content: '✓';
+  color: #5ca9fb;
+  font-weight: 700;
+  padding-right: 12px;
+}
+
+/* =========================================================
+   PROJECT SECTIONS: TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+  .project-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .project-list-style {
+    gap: 70px;
+  }
+
+  .project-text h2 {
+    font-size: 36px;
+  }
+}
+
+/* =========================================================
+   PROJECT SECTIONS: MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .project-section {
+    padding: 80px 0 70px;
+  }
+
+  .project-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .project-img {
+    max-width: 100%;
+  }
+
+  .project-text h2 {
+    font-size: 30px;
+  }
+
+  .project-list-style {
+    display: block;
   }
 }
