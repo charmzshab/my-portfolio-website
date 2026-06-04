@@ -3,6 +3,7 @@
     "title": "WELCOME TO MY PORTFOLIO",
     "paragraph": "Here you can learn more about me, my projects, and skills"
   },
+
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "Why": [
@@ -16,22 +17,28 @@
       "Lorem ipsum dolor",
       "Exercitation ullamco",
       "Lorem ipsum dolor"
-    ],
-    "Project01": {
-      "paragraph": "This is the first portfolio project section. It follows the same layout as the original template, with an image on the left and project details on the right.",
-      "features1": ["Feature One", "Feature Two", "Feature Three"],
-      "features2": ["Feature Four", "Feature Five", "Feature Six"]
-    },
-    "Project02": {
-      "paragraph": "This is the second portfolio project section. It keeps the same visual design while allowing us to showcase a different project.",
-      "features1": ["Feature One", "Feature Two", "Feature Three"],
-      "features2": ["Feature Four", "Feature Five", "Feature Six"]
-    },
-    "Project03": {
-      "paragraph": "This is the third portfolio project section. Later, we will replace this placeholder content with your real projects, technologies, and descriptions.",
-      "features1": ["Feature One", "Feature Two", "Feature Three"],
-      "features2": ["Feature Four", "Feature Five", "Feature Six"]
-    }
+    ]
+  },
+
+  "Project01": {
+    "paragraph": "Generates automated AI-powered email responses from submitted Microsoft Forms. When a user fills out the form, the Logic App collects the response details, sends the request to Azure OpenAI, generates customized instructions, and emails the response back to the user through Microsoft Outlook.",
+    "features1": [
+      "Microsoft Forms trigger captures new form submissions automatically",
+      "Azure Logic Apps retrieves the submitted response details",
+      "Azure OpenAI generates a customized AI response",
+      "Microsoft Outlook sends the generated response by email",
+      "End-to-end workflow reduces manual follow-up and saves time"
+    ]
+  },
+
+  "Project02": {
+    "paragraph": "This is the second portfolio project section. It keeps the same visual design while allowing us to showcase a different project.",
+    "features1": ["Feature One", "Feature Two", "Feature Three"]
+  },
+
+  "Project03": {
+    "paragraph": "This is the third portfolio project section. Later, we will replace this placeholder content with your real projects, technologies, and descriptions.",
+    "features1": ["Feature One", "Feature Two", "Feature Three"]
   },
   "Gallery": [
     {

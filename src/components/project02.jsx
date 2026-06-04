@@ -25,7 +25,7 @@ export const Project02 = (props) => {
 
               <div className="project-list-style">
                 <ul>
-                  {props.data ? (
+                  {props.data && props.data.features1 ? (
                     props.data.features1.map((d, i) => (
                       <li key={`${d}-${i}`}>{d}</li>
                     ))
@@ -35,21 +35,6 @@ export const Project02 = (props) => {
                       <li>Tempor incididunt</li>
                       <li>Lorem ipsum dolor</li>
                       <li>Incididunt ut labore</li>
-                    </>
-                  )}
-                </ul>
-
-                <ul>
-                  {props.data ? (
-                    props.data.features2.map((d, i) => (
-                      <li key={`${d}-${i}`}>{d}</li>
-                    ))
-                  ) : (
-                    <>
-                      <li>Aliquip ex ea commodo</li>
-                      <li>Lorem ipsum dolor</li>
-                      <li>Exercitation ullamco</li>
-                      <li>Lorem ipsum dolor</li>
                     </>
                   )}
                 </ul>

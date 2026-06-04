@@ -35,7 +35,7 @@ export const Navigation = (props) => {
 
             <li>
               <a href="#project01" className="page-scroll">
-                Project 01
+                Logic App Form Responder
               </a>
             </li>
             <li>
