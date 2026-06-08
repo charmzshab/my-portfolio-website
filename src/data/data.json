@@ -21,7 +21,7 @@
   },
 
   "Project01": {
-    "paragraph": "Generates automated AI-powered email responses from submitted Microsoft Forms. When a user fills out the form, the Logic App collects the response details, sends the request to Azure OpenAI, generates customized instructions, and emails the response back to the user through Microsoft Outlook.",
+    "paragraph": "Built an AI-powered form responder using Microsoft Forms, Azure Logic Apps, Outlook, and Azure OpenAI. The workflow captures form submissions, uses Azure OpenAI to generate intelligent responses, and sends automated replies through Outlook. The deployed cloud resources were disabled/deleted after testing to control Azure costs, while architecture documentation and screenshots are preserved for demonstration.",
     "features1": [
       "Microsoft Forms trigger captures new form submissions automatically",
       "Azure Logic Apps retrieves the submitted response details",
