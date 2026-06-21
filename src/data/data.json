@@ -32,8 +32,17 @@
   },
 
   "Project02": {
-    "paragraph": "This is the second portfolio project section. It keeps the same visual design while allowing us to showcase a different project.",
-    "features1": ["Feature One", "Feature Two", "Feature Three"]
+    "paragraph": "The Email Reminder Agent takes an email, reminder message and the date/time you want to send your reminder. Then verifies the user's email via a 6 digit email verification process. After this, the agent schedules your reminder to be sent to your email at the requested date/time.",
+    "features1": [
+      "Schedule reminders to yourself in the future",
+      "Email verification done by agent",
+      "Azure Container Apps for hosting frontend userface and AI Agent logic",
+      "Azure AI Foundry for hosting deployed LLM",
+      "Azure Cosmos DB for storing verification data and scheduled reminders",
+      "Azure Functions for forwarding scheduled reminder via Timer trigger to Azure Logic App",
+      "Azure Logic Apps to send verification emails and scheduled reminder emails sent from Azure Function",
+      "Azure Container Apps for hosting container images for Azure Container Apps"
+    ]
   },
 
   "Project03": {
