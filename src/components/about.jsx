@@ -1,12 +1,20 @@
 import React from 'react'
 
 const skills = [
-  'Full-stack development',
+  'Full-stack .NET development',
   'React & modern frontend',
   'ASP.NET Core Web API',
   'Database & backend design',
+  'SQL Server & Entity Framework',
   'AWS and Azure cloud',
+  'Power Apps & Power Automate',
+  'SharePoint integration',
+  'Azure Logic Apps',
+  'Copilot Studio',
+  'Azure AI Foundry',
   'REST API design & testing',
+  'Docker & container deployment',
+  'GitHub Actions & CI/CD',
   'AI agents & automation',
   'Strong learning mindset',
 ]
@@ -35,8 +43,8 @@ export const About = (props) => {
               I am a dedicated and passionate Software Developer focused on
               building beautiful, functional, and reliable applications. My
               goal is to deliver high-quality solutions using modern web
-              technologies, cloud platforms, and AI-powered tools to solve
-              real-world problems.
+              technologies, cloud platforms, Power Platform, and AI-powered
+              automation tools to solve real-world business problems.
             </p>
 
             <h3 className="about-skills-heading">What I Bring</h3>
