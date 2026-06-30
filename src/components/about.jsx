@@ -1,49 +1,54 @@
 import React from 'react'
 
+const skills = [
+  'Full-stack development',
+  'React & modern frontend',
+  'ASP.NET Core Web API',
+  'Database & backend design',
+  'AWS and Azure cloud',
+  'REST API design & testing',
+  'AI agents & automation',
+  'Strong learning mindset',
+]
+
 export const About = (props) => {
   return (
     <div id="about">
-      <div className="container about-section-box">
-        <div className="about-row">
-          <div className="about-image-column">
-            <img
-              src="img/about.jpeg"
-              className="img-responsive about-profile-img"
-              alt="About Shaban Lukyamuzi"
-            />
+      <div className="container">
+        <div className="about-wrapper">
+
+          <div className="about-photo-col">
+            <div className="about-photo-frame">
+              <img
+                src="img/about.jpeg"
+                className="about-photo"
+                alt="Shaban Lukyamuzi"
+              />
+            </div>
+            <p className="about-name-tag">Shaban Lukyamuzi</p>
+            <span className="about-role-badge">Software Developer</span>
           </div>
 
-          <div className="about-content-column">
-            <div className="about-text custom-about-text">
-              <h2>About Me</h2>
+          <div className="about-content-col">
+            <h2 className="about-heading">About Me</h2>
+            <p className="about-bio">
+              I am a dedicated and passionate Software Developer focused on
+              building beautiful, functional, and reliable applications. My
+              goal is to deliver high-quality solutions using modern web
+              technologies, cloud platforms, and AI-powered tools to solve
+              real-world problems.
+            </p>
 
-              <p>
-                I am a dedicated and passionate Software Developer focused on
-                building beautiful, functional, and reliable applications. My
-                goal is to deliver high-quality solutions using modern web
-                technologies, cloud platforms, and AI-powered tools to solve
-                real-world problems.
-              </p>
-
-              <h3>Why Choose Me?</h3>
-
-              <div className="about-list-style">
-                <ul>
-                  <li>Full-stack development experience</li>
-                  <li>React and modern frontend skills</li>
-                  <li>ASP.NET Core Web API development</li>
-                  <li>Database and backend design</li>
-                </ul>
-
-                <ul>
-                  <li>AWS and Azure cloud projects</li>
-                  <li>REST API design and testing</li>
-                  <li>AI agents and automation interest</li>
-                  <li>Strong learning mindset</li>
-                </ul>
-              </div>
+            <h3 className="about-skills-heading">What I Bring</h3>
+            <div className="about-skills-grid">
+              {skills.map((skill, i) => (
+                <span key={i} className="about-skill-badge">
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
+
         </div>
       </div>
     </div>
