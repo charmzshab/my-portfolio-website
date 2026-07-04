@@ -46,8 +46,21 @@
   },
 
   "Project03": {
-    "paragraph": "This is the third portfolio project section. Later, we will replace this placeholder content with your real projects, technologies, and descriptions.",
-    "features1": ["Feature One", "Feature Two", "Feature Three"]
+    "paragraph": "Dog Walkers United is a Power Platform business application built with Power Apps, SharePoint, and Power Automate. The app allows staff to manage dog profiles, track walking trips, view future bookings, and trigger automated invoice workflows. The solution integrates Power Apps with SharePoint lists as the backend and uses Power Automate to create workflow actions such as invoice tasks, reminders, and third-party system updates through connectors like Trello.",
+    "note": "Access note: This app is best presented as an internal staff Power Apps solution. Unlike Power Pages, which can be designed for external website users, external users cannot directly access this Power Apps app unless they are added to the organization and given the correct permissions and licensing.",
+    "features1": [
+      "Dog Profile Management - Allows users to view and manage dog profiles, including dog names, photos, owner details, breed, gender, and related information",
+      "Trip Tracking - Displays completed dog walking trips with trip date, dog name, walker, duration, rating, and trip photos",
+      "Trip Details View - Provides a detailed view of each selected trip, showing the dog, walker, walk duration, rating, and related images",
+      "Future Booking Management - Helps track upcoming dog walking bookings, including scheduled dates, assigned walkers, and dogs to be walked",
+      "Search and Sorting Functionality - Allows users to filter and sort trip records by date, name, or other available fields for easier navigation",
+      "Power Apps User Interface - Built with Microsoft Power Apps to provide a clean, interactive, low-code business application experience",
+      "SharePoint Data Integration - Uses SharePoint lists as the backend data source for storing dogs, trips, bookings, and related business records",
+      "Power Automate Workflow Integration - Connects Power Apps to Power Automate to trigger automated processes directly from the app",
+      "Invoice Automation - Allows users to trigger invoice-related workflows from a selected trip, reducing manual administrative work",
+      "Trello Integration - Creates Trello invoice task cards from Power Automate, helping the business track invoice processing activities",
+      "Role-Based Business Process Flow - Supports a practical business workflow where walkers, dog profiles, trips, bookings, and invoice tasks are connected in one system"
+    ]
   },
   "Gallery": [
     {
