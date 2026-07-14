@@ -27,10 +27,12 @@ const App = () => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
-      <Project01 data={landingPageData.Project01} />
-      <Project02 data={landingPageData.Project02} />
-      <Project03 data={landingPageData.Project03} />
-      <Project04 data={landingPageData.Project04} />
+      <div id="projects">
+        <Project01 data={landingPageData.Project01} />
+        <Project02 data={landingPageData.Project02} />
+        <Project03 data={landingPageData.Project03} />
+        <Project04 data={landingPageData.Project04} />
+      </div>
       {/* <Contact data={landingPageData.Contact} /> */}
     </div>
   )

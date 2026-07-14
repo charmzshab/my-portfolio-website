@@ -35,9 +35,10 @@ export const Navigation = (props) => {
 
             <li className="dropdown">
               <a
-                href="#"
+                href="#projects"
                 className="dropdown-toggle"
                 data-toggle="dropdown"
+                data-target="#"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
