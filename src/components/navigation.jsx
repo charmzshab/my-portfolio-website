@@ -48,6 +48,11 @@ export const Navigation = (props) => {
                 DOGWALKERSUNITED
               </a>
             </li>
+            <li>
+              <a href="#project04" className="page-scroll">
+                ElectroHub Copilot
+              </a>
+            </li>
             {/* <li>
               <a href="#contact" className="page-scroll">
                 Contact

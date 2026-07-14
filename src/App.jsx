@@ -5,6 +5,7 @@ import { About } from './components/about'
 import { Project01 } from './components/project01'
 import { Project02 } from './components/project02'
 import { Project03 } from './components/project03'
+import { Project04 } from './components/project04'
 // import { Contact } from './components/contact'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
@@ -29,6 +30,7 @@ const App = () => {
       <Project01 data={landingPageData.Project01} />
       <Project02 data={landingPageData.Project02} />
       <Project03 data={landingPageData.Project03} />
+      <Project04 data={landingPageData.Project04} />
       {/* <Contact data={landingPageData.Contact} /> */}
     </div>
   )

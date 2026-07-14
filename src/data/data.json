@@ -62,6 +62,23 @@
       "Role-Based Business Process Flow - Supports a practical business workflow where walkers, dog profiles, trips, bookings, and invoice tasks are connected in one system"
     ]
   },
+  "Project04": {
+    "paragraph": "ElectroHub Tech Guide is a conversational AI assistant designed for an electronics retailer. The agent helps customers discover suitable products, retrieve technical information, and check order details through a combination of structured conversation topics, Power Automate agent flows, interactive cards, and knowledge-grounded generative AI.",
+    "features1": [
+      "Product inquiry and recommendation conversations",
+      "Category and budget collection",
+      "JSON product-catalog filtering",
+      "Power Automate agent-flow integration",
+      "Interactive Adaptive Cards",
+      "Power Fx expressions and variable management",
+      "Custom and system topic configuration",
+      "Generative orchestration",
+      "Knowledge-grounded answers with citations",
+      "Controlled fallback and escalation",
+      "Authentication and privacy protection",
+      "Content moderation and response instructions"
+    ]
+  },
   "Gallery": [
     {
       "title": "Project Title",
